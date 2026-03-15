@@ -51,7 +51,7 @@ The graph shows the relationship between read depth (DP) and PHRED quality (QUAL
 Values above 900 were removed from the plotting, so that the general behavior can be seen properly.
 
 
-![Correlation Plot: DP & QUAL](you_power_is_GREEN.jpeg)
+![Correlation Plot: DP & QUAL](you_power_is_GREEN.png)
 ## R script code
 ```r
 library(tidyverse)
@@ -83,4 +83,4 @@ The final plot shows how PHRED quality changes with read depth across the detect
 A linear regression line shows the general trend. There is a slight positive relationship between DP and Qual.
 However, the relationship looks weak. The points are very widely scattered. Most variants are concentrated at low DP and low QUAL - the graph gets very dense.
 
-![Correlation Plot: DP & QUAL](you_power_is_GREEN.jpeg)
+![Correlation Plot: DP & QUAL](you_power_is_GREEN.png)
