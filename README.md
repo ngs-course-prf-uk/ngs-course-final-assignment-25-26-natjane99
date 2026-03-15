@@ -11,7 +11,7 @@ The input file from which the analysis whas done:
 workflow.sh contains the code needed for the extraction of wanted values
 data-analysis.R contains the R script used to plot the data into a scatter plot
 
-##workflow.sh code:
+## workflow.sh code:
 ```
 #to specify we are running in bash, set -e kills the script if command fails
 #!/bin/bash
@@ -45,14 +45,14 @@ chmod +x workflow.sh
 A file called "3_attempt_output_for_R.tsv" should be created.
 
 
-###What is in the graph?
+### What is in the graph?
 
 The graph shows the relationship between read depth (DP) and PHRED quality (QUAL) for the variants extracted from the VCF file.
 Values above 900 were removed from the plotting, so that the general behavior can be seen properly.
 
 
 ![Correlation Plot: DP & QUAL](you_power_is_GREEN.jpeg)
-##R script code
+## R script code
 ```r
 library(tidyverse)
 
@@ -77,7 +77,7 @@ To run the R script, run:
 Rscript data-analysis.R
 ```
 
-###What are the results?
+### What are the results?
 
 The final plot shows how PHRED quality changes with read depth across the detected variants. 
 A linear regression line shows the general trend. There is a slight positive relationship between DP and Qual.
